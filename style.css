@@ -1,0 +1,156 @@
+* {
+      -moz-box-sizing: border-box; /* Firexfox */
+      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+      box-sizing: border-box; /* IE */
+ }
+* {
+}
+body {
+  max-width: 60em;
+  margin: auto;
+
+}
+
+
+body > header {
+  height: 4em;
+  background-color: #eee;
+  margin: auto;}
+body > header > * {
+  height: 100%;
+  float: left;
+}
+body > header > * > * {
+  height: 50%;
+}
+body > header > div {
+  width: 45%;
+}
+body > header ul img {
+  /*placeholder*/
+  height: 1.2em;
+}
+.headLeft {
+  width: auto;
+}
+.headRight {
+  width: auto;
+  float: right;
+}
+#mainLogo {
+
+}
+body > header li {
+  display: inline-block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul, ol {
+  list-style-type: none;
+}
+h1,h2,h3,h4,p {
+  padding: 0;
+  margin: 0;
+}
+
+article {
+  min-height: inherit;
+}
+
+#banner {
+  clear: both;
+}
+
+body > header, #banner, #crunchReport, #featuredStories, #sidebar {
+  /*
+  border: 1px solid black;
+  min-height: 0.5em;
+  */
+
+}
+
+body > * {
+  padding: 0.25em;
+}
+#banner {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#banner a {
+  text-decoration: none;
+  color: inherit;
+}
+#crunchReport, #featuredStories, #sidebar{
+  float: left;
+}
+
+#crunchReport {
+  width: 50%;
+}
+#crunchReport img {
+  width: 100%;
+}
+#crunchReport footer {
+  color: gray;
+}
+#featuredStories, #sidebar {
+  width: 25%;
+}
+#featuredStories img {
+  width: 35%;
+  float: left;
+}
+#featuredStories h2, #featuredStories h3 {
+  width: 65%;
+  float: left;
+}
+#featuredStories h2 {
+  font-size: 1em;
+}
+#featuredStories h3 {
+  font-size: 1em;
+  color: gray;
+}
+#featuredStories article {
+  clear: both;
+}
+#crunchReport, #featuredStories {
+min-height: 20em;
+}
+#sidebar {
+  min-height: 15em;
+  text-align: center;
+  background-color: #eee;
+}
+#sidebar > * {
+  text-align: left;
+}
+#sidebar h2 {
+  color: white;
+  background-color: black;
+}
+#sidebar div {
+  display: inline-block;
+}
+#sidebar div,#sidebar h3 {
+  display: inline;
+}
+#sidebar form > input {
+  width: 60%;
+  float: left;
+  vertical-align: top;
+}
+#sidebar form > input + input {
+  width: 40%;
+}
+#sidebar label {
+  display: block;
+}
+#sidebar label + label {
+  border-top: 1px dotted black;
+}
