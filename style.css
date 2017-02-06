@@ -6,11 +6,14 @@
 * {
 }
 body {
-  max-width: 60em;
+  max-width: 80em;
   margin: auto;
 
 }
 
+.clear {
+  clear: both;
+}
 
 body > header {
   height: 4em;
@@ -101,12 +104,20 @@ body > * {
 #featuredStories, #sidebar {
   width: 25%;
 }
+#featuredStories ul li {
+  clear: both;
+  margin: 0.5em 0;
+  border-bottom: 1px dotted gray;
+}
 #featuredStories img {
   width: 35%;
   float: left;
+  margin-bottom: 0.5em;
+  margin-right: 3%
+
 }
 #featuredStories h2, #featuredStories h3 {
-  width: 65%;
+  width: 62%;
   float: left;
 }
 #featuredStories h2 {
@@ -123,7 +134,7 @@ body > * {
 min-height: 20em;
 }
 #sidebar {
-  min-height: 15em;
+  /*min-height: 15em;*/
   text-align: center;
   background-color: #eee;
 }
@@ -153,4 +164,60 @@ min-height: 20em;
 }
 #sidebar label + label {
   border-top: 1px dotted black;
+}
+
+
+
+
+/*   T A B L E T   */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #crunchReport {
+    width: 66.6666%;
+  }
+  #featuredStories {
+    width: 33.3333%;
+  }
+  #sidebar {
+    clear: both;
+    width: 100%;
+    height: auto;
+  }
+  #sidebar div > * {
+    display: inline;
+  }
+  .notForTablet {
+    display: none;
+  }
+}
+
+
+
+/*   M O B I L E   */
+@media only screen and (max-width: 767px) {
+  #crunchReport {
+    width: 100%;
+  }
+  #featuredStories {
+    width: 100%;
+  }
+  #featuredStories img {
+
+  }
+  #sidebar {
+    clear: both;
+    width: 100%;
+    height: auto;
+  }
+  #sidebar div > * {
+    display: inline;
+  }
+  .notForTablet {
+    display: none;
+  }
+  .notForMobile {
+    display: none;
+  }
+  #sidebar label .notForMobile {
+    display: none;
+  }
 }

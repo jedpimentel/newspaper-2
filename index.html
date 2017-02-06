@@ -9,7 +9,7 @@
     <header>
       <img src="1.jpg" alt="TechCrunch logo" id="mainLogo">
       <div class="headLeft">
-        <div>Got a tip?<a href="#">let us know</a>.</div>
+        <div class="notForTablet">Got a tip?<a href="#">let us know</a>.</div>
         <nav>
           <ul>
             <li><a href="#">News</a></li>
@@ -20,7 +20,7 @@
         </nav>
       </div>
       <div class="headRight">
-        <ul>
+        <ul class="notForTablet">
           <li>Follow Us</li>
           <li><a href="#"><img src="1.jpg" alt=""></a></li>
           <li><a href="#"><img src="1.jpg" alt=""></a></li>
@@ -39,8 +39,8 @@
       </div>
 
     </header>
-    <aside id="banner">
-      <a href="#">10TH ANNUAL CRUNCHIES Brooklyn 99 Star Chelsea Peretti to Host The Crunchies This February Get Your Tickets Today</a>
+    <aside id="banner" class="notForMobile">
+      <a href="#">10TH ANNUAL CRUNCHIES <span class="notForTablet">Brooklyn 99 Star Chelsea Peretti to Host The Crunchies </span>This February Get Your Tickets Today</a>
     </aside>
     <section id="crunchReport">
       <article class="">
@@ -57,6 +57,7 @@
             <img src="1.jpg" alt="">
             <h2>lorem ipsum something something whatever write stuff</h2>
             <h3>by some person</h3>
+            <div class="clear"></div>
           </article>
         </li>
         <li>
@@ -64,6 +65,7 @@
             <img src="1.jpg" alt="">
             <h2>lorem ipsum something something whatever write stuff</h2>
             <h3>by some person</h3>
+            <div class="clear"></div>
           </article>
         </li>
         <li>
@@ -71,6 +73,7 @@
             <img src="1.jpg" alt="">
             <h2>lorem ipsum something something whatever write stuff</h2>
             <h3>by some person</h3>
+            <div class="clear"></div>
           </article>
         </li>
         <li>
@@ -78,6 +81,7 @@
             <img src="1.jpg" alt="">
             <h2>lorem ipsum something something whatever write stuff</h2>
             <h3>by some person</h3>
+            <div class="clear"></div>
           </article>
         </li>
         <li>
@@ -85,6 +89,7 @@
             <img src="1.jpg" alt="">
             <h2>lorem ipsum something something whatever write stuff</h2>
             <h3>by some person</h3>
+            <div class="clear"></div>
           </article>
         </li>
       </ul>
@@ -97,21 +102,21 @@
           <input type="checkbox" name="The Daily Crunch" value="">
           <div>
             <h3>The Daily Crunch</h3>
-            <p>Get the top tech stories of the day delivered to your inbox</p>
+            <p class="notForMobile">Get the top tech stories of the day delivered to your inbox</p>
           </div>
         </label>
         <label>
           <input type="checkbox" name="The Daily Crunch" value="">
           <div>
             <h3>TC Weekly Roundup</h3>
-            <p>Get the weekly roundup of the biggest tech stories.</p>
+            <p class="notForMobile">Get the weekly roundup of the biggest tech stories.</p>
           </div>
         </label>
         <label>
           <input type="checkbox" name="The Daily Crunch" value="">
           <div>
             <h3>Crunchbase Daily</h3>
-            <p>The latest startup funding announcements.</p>
+            <p class="notForMobile">The latest startup funding announcements.</p>
           </div>
         </label>
         <input type="text" name="" value="" placeholder="Enter your email">
